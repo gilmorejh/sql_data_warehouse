@@ -2,13 +2,17 @@
 Data Cleaning
 */
 
+-- Clean bronze.crm_cust_info
 SELECT
 cst_id,
 cst_key,
 TRIM(cst_firstname) AS cst_firstname,
 TRIM(cst_lastname) AS cst_lastname,
 cst_marital_status,
-cst_gndr,
+CASE WHEN UPPER(TRIM(cst_gndr)) = 'F' THEN 'Female'
+	 WHEN UPPER(TRIM(cst_gndr)) = 'M' THEN 'Male'
+	 ELSE 'N/A'
+END cst_gndr,
 cst_create_date
 FROM(
 	SELECT *,
