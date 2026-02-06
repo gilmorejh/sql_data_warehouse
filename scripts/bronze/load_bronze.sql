@@ -13,8 +13,6 @@ Usage:
 	as part of the ingestion pipeline.
 */
 
-EXEC bronze.load_bronze
-
 CREATE OR ALTER PROCEDURE bronze.load_bronze as
 
 BEGIN
@@ -140,4 +138,6 @@ BEGIN
 			PRINT 'Error Mesage' + CAST (ERROR_NUMBER() as NVARCHAR);
 			PRINT '=================================================='
 		END CATCH
-END
+END;
+
+EXEC bronze.load_bronze

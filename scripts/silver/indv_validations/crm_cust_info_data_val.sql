@@ -4,7 +4,7 @@ Exploratory Data Validation
 ++++++++++++++++++++++++++++
 Purpose:
 	This script contains exploratory queries used to assess data quality
-	across Bronze and Silver tables. Each query is intended to be run
+	across Bronze and Silver for crm_cust_info. Each query is intended to be run
 	individually to identify null values, duplicate primary keys, unwanted
 	whitespace, and inconsistencies in standardized fields.
 */
@@ -54,5 +54,5 @@ WHERE cst_lastname != TRIM(cst_lastname)
 
 
 -- Check data standarization
-SELECT cst_gndr, cst_marital_status
+SELECT DISTINCT cst_gndr, cst_marital_status
 FROM silver.crm_cust_info

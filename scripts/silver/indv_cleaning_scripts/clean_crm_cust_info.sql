@@ -10,7 +10,10 @@ Purpose:
 	downstream analytics and modeling.
 */
 
--- Clean bronze.crm_cust_info
+-- Clear silver.crm_cust_info if info exsists
+TRUNCATE TABLE silver.crm_cust_info;
+
+-- Insert data into sivler.crm_cust_info
 INSERT INTO silver.crm_cust_info (
 cst_id,
 cst_key,
@@ -21,6 +24,7 @@ cst_gndr,
 cst_create_date
 )
 
+-- Clean data from bronze.crm_cust_info for silver
 SELECT
 cst_id,
 cst_key,

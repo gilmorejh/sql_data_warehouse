@@ -15,7 +15,7 @@ create table bronze.crm_cust_info (
 	cst_key NVARCHAR(50),
 	cst_firstname NVARCHAR(50),
 	cst_lastname NVARCHAR(50),
-	cst_material_status NVARCHAR(50),
+	cst_marital_status NVARCHAR(50),
 	cst_gndr NVARCHAR(50),
 	cst_create_date DATE
 );
@@ -29,8 +29,8 @@ create table bronze.crm_prd_info(
 	prd_nm NVARCHAR(50),
 	prd_cost INT,
 	prd_line NVARCHAR(50),
-	prd_start DATE,
-	prd_end_dt DATE
+	prd_start_dt DATETIME,
+	prd_end_dt DATETIME
 );
 GO
 
@@ -52,25 +52,25 @@ GO
 IF OBJECT_ID('bronze.erp_cust_az12', 'U') is not null
 	DROP TABLE bronze.erp_cust_az12;
 create table bronze.erp_cust_az12(
-	CID NVARCHAR(50),
-	BDATE DATE,
-	GEN NVARCHAR(50)
+	cid NVARCHAR(50),
+	bdate DATE,
+	gen NVARCHAR(50)
 );
 GO
 
 IF OBJECT_ID('bronze.erp_loc_a101', 'U') is not null
 	DROP TABLE bronze.erp_loc_a101;
 create table bronze.erp_loc_a101(
-	CID NVARCHAR(50),
-	CNTRY NVARCHAR(50)
+	cid NVARCHAR(50),
+	cntry NVARCHAR(50)
 );
 GO
 
 IF OBJECT_ID('bronze.erp_px_cat_g1v2', 'U') is not null
 	DROP TABLE bronze.erp_px_cat_g1v2;
 create table bronze.erp_px_cat_g1v2(
-	ID NVARCHAR(50),
-	CAT NVARCHAR(50),
-	SUBCAT NVARCHAR(50),
-	MAINTENANCE NVARCHAR(50)
+	id NVARCHAR(50),
+	cat NVARCHAR(50),
+	subcat NVARCHAR(50),
+	maintenance NVARCHAR(50)
 );
