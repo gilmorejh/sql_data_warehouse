@@ -8,8 +8,6 @@ Purpose:
 	the DDL structure for the Silver layer.
 */
 
-
-
 IF OBJECT_ID('silver.crm_cust_info', 'U') is not null
 	DROP TABLE silver.crm_cust_info;
 create table silver.crm_cust_info (
