@@ -1,10 +1,36 @@
-# Modern Data Warehouse with SQL Server
+# Data Warehouse & Analytics Portfolio Project
 
-## Overview
-
-This project focuses on building a **modern data warehouse using SQL Server**, covering the full lifecycle from **ETL (Extract, Transform, Load)** to **data modeling** and **analytics**. The goal is to create a scalable, analytics-ready warehouse that supports reliable reporting, business intelligence, and data-driven decision-making.
+This repository showcases a **modern data warehouse** and analytics solution built with SQL Server.  
+It highlights industry best practices in **data engineering**, **ETL development**, **data modeling**, and **analytics** — making it an ideal portfolio project for aspiring data professionals.
 
 ---
+
+## Data Architecture
+
+The project uses a **Medallion Architecture**:
+
+1. **Bronze Layer** – Raw data ingestion from source systems (CSV → SQL Server).
+2. **Silver Layer** – Cleansing, standardization, and normalization for analysis.
+3. **Gold Layer** – Business-ready star schema for reporting and analytics.
+
+## Project Overview
+
+This project demonstrates:
+
+- **Data Architecture:** Building a modern warehouse using Bronze, Silver, and Gold layers.
+- **ETL Pipelines:** Extract, transform, and load data from ERP and CRM sources.
+- **Data Modeling:** Designing dimension and fact tables optimized for analytics.
+- **Analytics & Reporting:** Producing SQL reports and dashboards for business insights.
+
+### Skills Highlight
+
+This project demonstrates expertise in:
+
+- **SQL Development** & Query Optimization
+- **Data Warehousing** & Medallion Architecture
+- **ETL Pipeline Design & Implementation**
+- **Dimensional Modeling** (Star Schema)
+- **Data Analytics & Reporting**
 
 ## Project Goals
 
@@ -13,52 +39,11 @@ This project focuses on building a **modern data warehouse using SQL Server**, c
 * Apply **dimensional modeling** (fact & dimension tables)
 * Optimize for **query performance and analytics**
 * Enable **reporting, dashboards, and downstream analysis**
+* 
+## About Me
 
----
+Hi! I'm **John Gilmore**, a data enthusiast and aspiring data engineer/analyst.  
+I enjoy transforming raw data into **actionable insights** and building **clean, scalable data pipelines**.  
 
-## Key Components
-
-### 1. ETL Pipelines
-
-* Extract data from source systems
-* Clean, validate, and transform raw data
-* Load structured data into staging and warehouse layers
-* Ensure **data quality, consistency, and auditability**
-
-### 2. Data Modeling
-
-* Star and/or snowflake schema design
-* Fact tables for measurable events
-* Dimension tables for descriptive attributes
-* Surrogate keys, slowly changing dimensions, and historization (where applicable)
-
-### 3. Warehouse Layers (Planned Structure)
-
-* **Raw / Staging** — minimally transformed source data
-* **Core / Warehouse** — structured fact and dimension tables
-* **Analytics / Marts** — curated datasets for reporting and BI
-
----
-
-## Tech Stack
-
-* **Database:** SQL Server
-* **ETL:** SQL-based transformations (SSIS or custom scripts may be added later)
-* **Modeling:** Dimensional modeling principles
-* **Analytics:** SQL queries, reporting-ready datasets
-
----
-
-## How to Use This Project
-
-* Explore SQL scripts to understand **ETL and modeling logic**
-* Reuse schema patterns for your own warehouse projects
-* Adapt transformations for similar analytics pipelines
-
----
-
-## Contributing & Iteration
-
-This README and project will **continue evolving** as the warehouse grows. Suggestions, improvements, and experimentation are welcome.
-
----
+This project reflects my approach: structured, methodical, and focused on **industry best practices**.  
+I love solving complex problems with SQL, data modeling, and analytics, and sharing my work with the community.
